@@ -5,7 +5,7 @@ export const works = [
     year: '2024',
     kind: '建筑随笔',
     location: '直岛·日本',
-    cover: '/works/I.jpg',
+    cover: './works/I.jpg',
     desc: '光在清水混凝土墙面上缓慢移动，一日便是一年。',
     body: [
       '走进礼拜堂之前，先要经过一段贴着山体的混凝土甬道。头顶是低矮的裂缝，光从那里倾泻下来，把路分成明与暗。',
@@ -22,7 +22,7 @@ export const works = [
     year: '2024',
     kind: '空间速写',
     location: '京都·日本',
-    cover: '/works/II.jpg',
+    cover: './works/II.jpg',
     desc: '木结构与灰空间的对话，关于"进入"这一动作的仪式感。',
     body: [
       '山门是寺院的入口，也是凡俗与神圣的界碑。光明寺的山门不算宏大，却把"进入"这个动作拆解得极为精细。',
@@ -39,7 +39,7 @@ export const works = [
     year: '2025',
     kind: '案例研究',
     location: '大阪·日本',
-    cover: '/works/III.jpg',
+    cover: './works/III.jpg',
     desc: '安藤忠雄的雨季中庭——用一道雨线重塑居住的尺度。',
     body: [
       '住吉的长屋是一栋狭长的木结构住宅，前后窄，左右紧贴邻居，无法开侧窗。建筑师做了一个近乎偏激的决定：把房子从中间切开，插入一个露天中庭。',
@@ -56,7 +56,7 @@ export const works = [
     year: '2025',
     kind: '建筑评论',
     location: '直岛·日本',
-    cover: '/works/IV.jpg',
+    cover: './works/IV.jpg',
     desc: '一座埋入地下的盒子，让天空与海成为唯一的展品。',
     body: [
       '地中美术馆几乎从视野中消失。入口处只能看见一道嵌入山坡的混凝土切口，像是一道被岩层压扁的伤口。',
@@ -73,7 +73,7 @@ export const works = [
     year: '2025',
     kind: '展览观察',
     location: '威尼斯·意大利',
-    cover: '/works/V.jpg',
+    cover: './works/V.jpg',
     desc: '关于展亭、装置与场地之间"轻盈"的可能性。',
     body: [
       '威尼斯双年展的主题展馆散布在 Giardini 与 Arsenale 两处。本届的主题关于"轻盈"——但"轻盈"在建筑里几乎是个悖论。',
@@ -90,7 +90,7 @@ export const works = [
     year: '2025',
     kind: '改造案例',
     location: '毕尔巴鄂·西班牙',
-    cover: '/works/VI.jpg',
+    cover: './works/VI.jpg',
     desc: '一座谷仓如何成为城市的客厅——OMA 的旧建筑改造策略。',
     body: [
       'La Alhóndiga 是 1909 年的一座市政酒窖，红砖外墙，铁木屋顶，几乎废弃。OMA 在 2010 年的改造让它重获新生。',
@@ -107,7 +107,7 @@ export const works = [
     year: '2026',
     kind: '速写集',
     location: '波波洛庭院·罗马',
-    cover: '/works/VII.jpg',
+    cover: './works/VII.jpg',
     desc: '一组关于柱廊、光影与时间的研究性速写。',
     body: [
       '这组速写源于一次罗马的旅行。波波洛广场的柱廊是贝尔尼尼设计的，一百四十二根柱子在阳光下排成长阵。',
@@ -124,7 +124,7 @@ export const works = [
     year: '2026',
     kind: '田野记录',
     location: '苏州·中国',
-    cover: '/works/VIII.jpg',
+    cover: './works/VIII.jpg',
     desc: '粉墙黛瓦之间的灰度——用相机丈量水乡的色彩。',
     body: [
       '江南民居的"白"不是纯白，是带灰的白；"黑"不是纯黑，是带青的黑。我去苏州测绘的原因，就是想弄清楚这两句话到底是不是真的。',
@@ -141,7 +141,7 @@ export const works = [
     year: '2024',
     kind: '改造案例',
     location: '上海·中国',
-    cover: '/works/IX.jpg',
+    cover: './works/IX.jpg',
     desc: '一座 1930 年代的屠宰场，被钢筋混凝土的"伞"撑了八十年。',
     body: [
       '1933 老场坊是 1933 年英国设计师巴尔弗斯设计的远东最大屠宰场。八十年过去，屠宰早已迁走，只剩一栋方形的混凝土盒子。',
@@ -157,7 +157,7 @@ export const works = [
     year: '2024',
     kind: '建筑评论',
     location: '沃斯堡·美国',
-    cover: '/works/X.jpg',
+    cover: './works/X.jpg',
     desc: '路易斯·康最后一件作品——16 个拱顶的节奏。',
     body: [
       '金贝尔美术馆是路易斯·康的最后一座公共建筑，1972 年完工。他那年 71 岁，次年去世。',
@@ -173,7 +173,7 @@ export const works = [
     year: '2024',
     kind: '建筑评论',
     location: '罗马·意大利',
-    cover: '/works/XI.jpg',
+    cover: './works/XI.jpg',
     desc: '迈耶的三片白帆——在古典街区如何做"不打扰"。',
     body: [
       '罗马千禧教堂是理查德·迈耶 2003 年的作品。它身处一个 1930 年代的住宅区，周围都是五到六层的米黄墙面。',
@@ -189,7 +189,7 @@ export const works = [
     year: '2024',
     kind: '田野记录',
     location: '京都·日本',
-    cover: '/works/XII.jpg',
+    cover: './works/XII.jpg',
     desc: '江户时代的"茶室建筑"——四百年后还在教现代人。',
     body: [
       '桂离宫是 17 世纪江户时代天皇御所的别邸。它不是一栋建筑，是一组建筑——书院、松琴亭、月波楼、笑意轩，散落在一个借景园林里。',
@@ -206,7 +206,7 @@ export const works = [
     year: '2025',
     kind: '建筑评论',
     location: '苏州·中国',
-    cover: '/works/XIII.jpg',
+    cover: './works/XIII.jpg',
     desc: '贝聿铭最后的江南——白墙片石之后的和解。',
     body: [
       '苏州博物馆是贝聿铭 2006 年的作品，也是他生前最后一件公共建筑。地点在拙政园和太平天国忠王府之间，邻居都是明清古建筑。',
@@ -223,7 +223,7 @@ export const works = [
     year: '2025',
     kind: '田野记录',
     location: '巴塞罗那·西班牙',
-    cover: '/works/XIV.jpg',
+    cover: './works/XIV.jpg',
     desc: '高迪的未完成——一座要建到 2026 年的教堂。',
     body: [
       '神圣家族教堂（Sagrada Família）从 1882 年开工，预计 2026 年完工。算下来是高迪死后 100 年。',
@@ -240,7 +240,7 @@ export const works = [
     year: '2025',
     kind: '案例研究',
     location: '鹿野苑·中国',
-    cover: '/works/XV.jpg',
+    cover: './works/XV.jpg',
     desc: '一座藏在四川山里的当代石塔建筑。',
     body: [
       '石经山房是建筑师赵扬在四川西部一个藏族村庄设计的私人佛堂，2016 年完工。',
@@ -257,7 +257,7 @@ export const works = [
     year: '2025',
     kind: '改造案例',
     location: '犬岛·日本',
-    cover: '/works/XVI.jpg',
+    cover: './works/XVI.jpg',
     desc: '一座 1909 年的炼铜厂废墟，藤本壮介保留了它的破碎。',
     body: [
       '犬岛是濑户内海的一个小岛，1909 年曾有炼铜厂。厂子在 1919 年关停，剩下的废墟在岛上躺了 80 年。',
@@ -274,7 +274,7 @@ export const works = [
     year: '2026',
     kind: '建筑评论',
     location: '巴黎·法国',
-    cover: '/works/XVII.jpg',
+    cover: './works/XVII.jpg',
     desc: '1977 年的"反建筑"——把结构、管道、电梯全部翻到外立面。',
     body: [
       '蓬皮杜中心是 1977 年皮亚诺和罗杰斯的作品。它把本应藏在建筑内部的东西——电梯、楼梯、空调管道、电路——全部翻到了外立面。',
@@ -291,7 +291,7 @@ export const works = [
     year: '2026',
     kind: '建筑评论',
     location: '麦纳麦·巴林',
-    cover: '/works/XVIII.jpg',
+    cover: './works/XVIII.jpg',
     desc: '库哈斯在阿拉伯沙漠放了一栋包豪斯。',
     body: [
       '巴林国家剧院是库哈斯 2012 年的作品。地点在麦纳麦的郊区，2010 年才填海造出来的一片空地。',
@@ -308,7 +308,7 @@ export const works = [
     year: '2026',
     kind: '改造案例',
     location: '上海·中国',
-    cover: '/works/XIX.jpg',
+    cover: './works/XIX.jpg',
     desc: '柳亦春把煤漏斗保留成美术馆的"伞"。',
     body: [
       '龙美术馆西岸馆是建筑师柳亦春 2014 年的作品。地点是上海徐汇滨江的一个旧煤炭码头。',
@@ -325,7 +325,7 @@ export const works = [
     year: '2026',
     kind: '田野记录',
     location: '京都·日本',
-    cover: '/works/XX.jpg',
+    cover: './works/XX.jpg',
     desc: '1053 年的阿弥陀堂——一千年后还在教人造房子。',
     body: [
       '平等寺凤凰堂是 1053 年的建筑，藤原时代。它被印在 10 日元硬币背面，是世界上被印制次数最多的建筑。',
