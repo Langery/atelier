@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#f5f1e8"/>
+  <text x="16" y="24" font-family="EB Garamond, Georgia, serif" font-size="26" font-style="italic" font-weight="400" text-anchor="middle" fill="#1a1a1a">A</text>
+  <line x1="6" y1="28" x2="26" y2="28" stroke="#c8553d" stroke-width="1"/>
+</svg>
