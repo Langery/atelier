@@ -5,6 +5,7 @@ import { works } from '../data/works.js'
 
 const route = useRoute()
 const router = useRouter()
+const BASE_URL = import.meta.env.BASE_URL
 
 const activeKind = ref('全部')
 const pageSize = 8
@@ -98,7 +99,7 @@ watch(() => route.query.page, (q) => {
       >
         <div class="work-num">{{ w.num }}</div>
         <figure class="work-thumb">
-          <img :src="w.cover" :alt="w.title" loading="lazy" />
+          <img :src="`${BASE_URL}works/${w.cover}`" :alt="w.title" loading="lazy" />
         </figure>
         <div class="work-body">
           <h3 class="work-title">{{ w.title }}</h3>

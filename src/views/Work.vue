@@ -5,6 +5,7 @@ import { getWork, works } from '../data/works.js'
 
 const route = useRoute()
 const router = useRouter()
+const BASE_URL = import.meta.env.BASE_URL
 
 const work = computed(() => getWork(route.params.num))
 
@@ -98,7 +99,7 @@ const readings = computed(() => {
     </header>
 
     <figure class="work-cover">
-      <img :src="work.cover" :alt="work.title" />
+      <img :src="`${BASE_URL}works/${work.cover}`" :alt="work.title" />
       <figcaption class="work-caption">
         <span class="cap-num">图 {{ romanNum(idx) }}</span>
         <span class="cap-sep">·</span>

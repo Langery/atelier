@@ -3,6 +3,7 @@ import { useRoute } from 'vue-router'
 import { works } from '../data/works.js'
 
 const route = useRoute()
+const BASE_URL = import.meta.env.BASE_URL
 
 // 手工 15 字内图说: 比截取正文更准
 const CAPTIONS = {
@@ -56,7 +57,7 @@ const plates = works.map(w => ({
       <li v-for="(p, i) in plates" :key="p.num" :class="['plate', i % 3 === 1 ? 'plate-offset' : '']">
         <figure>
           <router-link :to="{ name: 'work', params: { num: p.num } }">
-            <img :src="p.cover" :alt="p.title" loading="lazy" />
+            <img :src="`${BASE_URL}works/${p.cover}`" :alt="p.title" loading="lazy" />
           </router-link>
           <figcaption>
             <div class="plate-meta">
