@@ -338,6 +338,12 @@ export const works = [
   }
 ]
 
-export function getWork(num) {
-  return works.find(w => w.num === num)
+// O(1) 索引: num -> 数组下标
+const idxByNum = new Map(works.map((w, i) => [w.num, i]))
+
+export const getWork = (num) => {
+  const i = idxByNum.get(num)
+  return i === undefined ? undefined : works[i]
 }
+
+export const idxOf = (num) => idxByNum.get(num) ?? -1

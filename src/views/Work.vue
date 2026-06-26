@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { getWork, works } from '../data/works.js'
+import { getWork, idxOf, works } from '../data/works.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -9,7 +9,7 @@ const BASE_URL = import.meta.env.BASE_URL
 
 const work = computed(() => getWork(route.params.num))
 
-const idx = computed(() => works.findIndex(w => w.num === route.params.num))
+const idx = computed(() => idxOf(route.params.num))
 const prev = computed(() => (idx.value > 0 ? works[idx.value - 1] : works[works.length - 1]))
 const next = computed(() => (idx.value < works.length - 1 ? works[idx.value + 1] : works[0]))
 

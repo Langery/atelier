@@ -11,10 +11,7 @@ const activeKind = ref('全部')
 const pageSize = 8
 const currentPage = ref(1)
 
-const kinds = computed(() => {
-  const set = new Set(works.map(w => w.kind))
-  return ['全部', ...Array.from(set)]
-})
+const kinds = computed(() => ['全部', ...new Set(works.map(w => w.kind))])
 
 const filtered = computed(() => {
   if (activeKind.value === '全部') return works

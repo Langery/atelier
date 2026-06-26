@@ -29,13 +29,9 @@ const CAPTIONS = {
   XX:  '阿弥陀堂'
 }
 
-const plates = works.map(w => ({
-  num: w.num,
-  cover: w.cover,
-  title: w.title,
-  location: w.location,
-  year: w.year,
-  caption: CAPTIONS[w.num] || w.title
+const plates = works.map(({ num, cover, title, location, year }) => ({
+  num, cover, title, location, year,
+  caption: CAPTIONS[num] || title
 }))
 </script>
 

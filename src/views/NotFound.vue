@@ -1,9 +1,8 @@
 <script setup>
-import { works } from '../data/works.js'
+import { getWork } from '../data/works.js'
 
-// 4 篇热门
 const featured = ['I', 'XIV', 'X', 'XX']
-const picks = featured.map(n => works.find(w => w.num === n)).filter(Boolean)
+const picks = featured.map(getWork)
 </script>
 
 <template>

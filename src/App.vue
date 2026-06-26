@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted, onUnmounted, ref, watch, computed } from 'vue'
 import { RouterView, RouterLink, useRoute, useRouter } from 'vue-router'
-import { works } from './data/works.js'
+import { works, idxOf } from './data/works.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -17,7 +17,7 @@ const bannerKey = ref(0) // 强制重渲染触发 transition
 // 计算当前作品 (含前后篇)
 const workContext = computed(() => {
   if (route.name !== 'work' || !route.params.num) return null
-  const idx = works.findIndex(w => w.num === route.params.num)
+  const idx = idxOf(route.params.num)
   if (idx < 0) return null
   return {
     cur: works[idx],
@@ -46,7 +46,7 @@ function onKey(e) {
 
   // ← / → 在作品页翻上/下篇 (首尾循环)
   if (route.name === 'work') {
-    const idx = works.findIndex(w => w.num === route.params.num)
+    const idx = idxOf(route.params.num)
     if (idx >= 0) {
       if (e.key === 'ArrowLeft') {
         const p = idx === 0 ? works.length - 1 : idx - 1
