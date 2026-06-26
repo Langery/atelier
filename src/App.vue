@@ -26,7 +26,7 @@ const workContext = computed(() => {
   }
 })
 
-function showBanner() {
+const showBanner = () => {
   const ctx = workContext.value
   if (!ctx) return
   bannerText.value = `${ctx.cur.num}  ·  上一期 ${ctx.prev.num}  ·  下一期 ${ctx.next.num}  ·  ${ctx.cur.title}`
@@ -39,7 +39,7 @@ watch(() => route.params.num, () => {
   if (route.name === 'work') showBanner()
 })
 
-function onKey(e) {
+const onKey = (e) => {
   const tag = (e.target.tagName || '').toLowerCase()
   if (['input', 'textarea', 'select'].includes(tag)) return
   if (e.metaKey || e.ctrlKey || e.altKey) return
@@ -66,18 +66,18 @@ function onKey(e) {
   }
 }
 
-function onScroll() {
+const onScroll = () => {
   const h = document.documentElement
   const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100
   progressWidth.value = scrolled + '%'
   showTop.value = h.scrollTop > 600
 }
 
-function backToTop() {
+const backToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
-function togglePaper() {
+const togglePaper = () => {
   paperAged.value = !paperAged.value
   document.body.classList.toggle('paper-aged', paperAged.value)
   try { localStorage.setItem('paper-aged', paperAged.value ? '1' : '0') } catch {}

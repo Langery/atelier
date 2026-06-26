@@ -13,6 +13,13 @@ const currentPage = ref(1)
 
 const kinds = computed(() => ['全部', ...new Set(works.map(w => w.kind))])
 
+// 各 kind 的作品数 (含 '全部' = works.length) — 避免模板内联 filter
+const kindCounts = computed(() => {
+  const counts = new Map([['全部', works.length]])
+  for (const w of works) counts.set(w.kind, (counts.get(w.kind) || 0) + 1)
+  return counts
+})
+
 const filtered = computed(() => {
   if (activeKind.value === '全部') return works
   return works.filter(w => w.kind === activeKind.value)
@@ -25,14 +32,14 @@ const paged = computed(() => {
   return filtered.value.slice(start, start + pageSize)
 })
 
-function setPage(p) {
+const setPage = (p) => {
   if (p < 1 || p > totalPages.value) return
   currentPage.value = p
   // 翻页时滚到列表顶部
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
-function setKind(k) {
+const setKind = (k) => {
   activeKind.value = k
   currentPage.value = 1
 }
@@ -75,8 +82,7 @@ watch(() => route.query.page, (q) => {
         @click="setKind(k)"
       >
         {{ k }}
-        <span class="filter-count" v-if="k !== '全部'">{{ works.filter(w => w.kind === k).length }}</span>
-        <span class="filter-count" v-else>{{ works.length }}</span>
+        <span class="filter-count">{{ kindCounts.get(k) || 0 }}</span>
       </button>
     </div>
 

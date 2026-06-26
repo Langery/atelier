@@ -5,8 +5,8 @@ const route = useRoute()
 
 // 每封来信的展开/收起
 const expanded = ref({ 1: true, 2: true, 3: true, 4: true })
-function toggle(id) { expanded.value[id] = !expanded.value[id] }
-function visibleBody(l) {
+const toggle = (id) => { expanded.value[id] = !expanded.value[id] }
+const visibleBody = (l) => {
   if (expanded.value[l.id]) return l.body
   return l.body.slice(0, 2)
 }
